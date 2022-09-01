@@ -1,0 +1,143 @@
+$color:red;
+$bgcolor:lightblue;
+$fs-h1:2rem;
+ 
+.fgrp{
+    padding: 0 20px;
+}
+/* mixin */
+@mixin text-links{
+    color:blueviolet;
+    text-decoration:none;
+    font-size:1rem;
+    border:1px solid blueviolet;
+    border-radius: 20px;
+    padding:.2rem .8rem;
+    
+}
+ .box{
+     border:1px solid #333;
+     text-align: center;
+     border-radius: .6rem;
+     min-height: 350px;
+     transition:all .4s ease;
+     margin-top: 50px;
+
+       .circle-box{
+            width: 100px;
+            height: 100px;
+            background:blue;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            margin:16px auto;
+            
+            h3{
+        font-size: 16px;
+        line-height: 100px;
+       }
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        color: grey;
+    }
+    span a{
+        @include text-links;
+    }
+    .butn-grp{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 0;
+    }
+    .btn-1{
+        margin-right: 10px;
+    }
+    &:hover{
+        border: 3px solid red;
+        cursor: pointer;
+        transform: translateY(-10px);
+    }
+ }
+
+ .feature{
+    background: cadetblue;
+    margin:100px 0 44px;
+    padding: 30px 0;
+    .feature-grp{
+        display: flex;
+        margin-bottom: 25px;
+         .feature-icn{
+            width: 80px;
+            height: 80px; 
+            background: #fff;
+            border-radius: 50%;
+            line-height: 80px;
+            color: #333;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .feature-des{
+            margin-left:15px;
+            h3{
+                color: #fff;
+
+            }
+        }
+    }
+ }
+ .class-container{
+    margin: 20px 0 30px;
+ }
+ 
+ @mixin theme($theme:DarkGray){
+    background: $theme;
+    box-shadow: 0 0 1px rgba($theme, 0.25);
+    color: #fff;
+    padding:1rem .65rem;
+    text-align: center;
+ }
+ .icon-bx{
+        width: 100px;
+        height: 100px;
+        color: #333;
+        line-height: 100px;
+        text-align: center;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+ }
+ .theme-title{
+    font-size: 1.1rem;
+    color:#fff;
+    padding: 1rem 0;
+ }
+ .info{
+    @include theme;
+    .ms{
+        @extend .icon-bx;
+        @extend .theme-title;
+        background: #fff;
+        
+    }
+ }
+ .alerrt{
+    @include theme($theme:DarkRed);
+    .ms{
+        @extend .icon-bx;
+        @extend .theme-title;
+        background: #fff;
+        
+    }
+     }
+     .success{
+        @include theme($theme:DarkGreen);
+        .ms{
+            @extend .icon-bx;
+            @extend .theme-title;
+            background: #fff;
+            
+        }
+     }

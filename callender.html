@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <link rel="stylesheet" href=
+"jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript"
+        src="scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+        src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript"
+        src="jqwidgets/jqxdatetimeinput.js"></script>
+    <script type="text/javascript"
+        src="jqwidgets/jqxcalendar.js"></script>
+    <script type="text/javascript"
+        src="jqwidgets/globalization/globalize.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqwidgets/14.0.0/jqwidgets/jqx-all.min.js" integrity="sha512-ZUxHFEM9FIh7yU3A7G4n4PAR/KvgHbmtlp3qe4EckzI+a/ZPYjQZ0iYKWAbiUBCWvN+3tISW1DZFSI1sfe8tlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+ 
+<body>
+    <center>
+        <h1 style="color: green;">
+            EXAPUR
+        </h1>
+ 
+        <h3>
+            EXAPUR
+        </h3>
+ 
+        <div id='jqxcal'></div>
+    </center>
+ 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#jqxcal").jqxCalendar({
+                theme: 'energyblue',
+                width: '400px',
+                height: '300px',
+                enableTooltips: true,
+                backText: 'Back Option'
+            });
+        });
+    </script>
+</body>
+ 
+</html>

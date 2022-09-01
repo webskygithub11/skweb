@@ -1,0 +1,68 @@
+.bx {
+  font-size: 1rem;
+  color: #FFF;
+  padding: 3rem;
+  background: red;
+}
+.bx nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.bx nav li {
+  padding: 10px;
+  margin-right: 10px;
+  color: #fff;
+  display: inline;
+}
+.bx nav a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px;
+}
+.bx nav a:hover {
+  background: rgb(8, 8, 1);
+  border-radius: 10px;
+}
+
+.imp li:nth-child(2n+1) {
+  color: green;
+  font-size: large;
+}
+
+.slide {
+  background: green;
+  color: #FFF;
+  font-size: large;
+  text-align: center;
+  width: 400px;
+}
+
+.panel-body {
+  background-color: red;
+  color: #FFF;
+  font-size: 1rem;
+  text-align: center;
+  display: none;
+  width: 400px;
+}
+
+.btnn {
+  width: 130px;
+  background: blue;
+  color: #fff;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.ajaxx {
+  width: 400px;
+  height: 300px;
+  margin: 30px auto;
+  background: green;
+  padding: 20px;
+}
+
+.test {
+  font-weight: red;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>JS- Tutorial</title>
+ <style>
+    #demo{
+       
+        background: green;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+       
+    }
+    .nbr{
+        width: 300px;
+        height: auto;
+        background-color: red;
+    }
+ </style>
+</head>
+<body>
+<div id="demo">
+    <div id="nbr"></div>
+</div>
+<script>
+ function Myfun(){
+    var i, s ="";
+    for(i = 14; i<=100; i+=14){
+      s +=i + '<br>';
+             }
+           document.getElementById('demo').innerHTML = s;
+ }
+ Myfun();
+    
+ </script>
+</body>
+</html>

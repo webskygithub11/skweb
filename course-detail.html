@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Detal Page</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style type="text/css">
+.course-container{
+	width:100%;
+	height: auto;
+}
+.header{
+	background: blue;
+	padding:3rem;
+	text-align: center;
+	color: #fff;
+}
+.body-content{
+	display: flex;
+	width: 90%;
+	margin: 2rem auto;
+
+}
+.left-col{
+	width: 75%;
+}
+.right-col{
+	width: 25%;
+	background:#e2ebeb;
+	padding: 1rem 0.85rem 0;
+    border: 1px solid #d1d7dc;
+}
+.right-col ul{
+	list-style: none;
+	margin:1.4rem 0;
+
+
+}
+.right-col li {
+	padding-bottom: .2rem;
+}
+.right-col li a{
+	text-decoration: none;
+	color: #333;
+}
+
+.right-col img{
+	display: block;
+	margin: 0 auto;
+	
+}
+.button {
+	border: none;
+    color: white;
+    padding: 14px 91px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 21px;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    display: block;
+    transition: all .3s linear;
+}
+
+.button2 {
+	background-color: #008CBA;
+} 
+
+.course-detls{
+    border: 1px solid #d1d7dc;
+	margin-right: 1rem;
+	padding:.6rem;
+}
+.price-container{
+	align-items: center;
+    color: #1c1d1f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;;
+    margin-top: 1rem;
+}
+.price-text{
+   	line-height: 1;
+    padding: 0.4rem 0;
+    margin-right: 0.8rem;
+    white-space: nowrap;
+}
+.pr-text{
+	   font-size: 2.4rem;
+	   font-weight: bold;
+}
+.price-off-txt{
+	 color: #000;
+	 font-size: 1.3rem;
+}
+.strike-text{
+	   color: #6a6f73;
+	   font-size: 1.5rem;
+}
+.discount-text{
+	 color:red;
+	 text-indent:6px;
+	}
+	 
+.discount-text p:before{
+	font-family:"FontAwesome";
+	content: "\f017";
+	padding-right: .3rem;
+}
+.topic-list{
+	margin: 2rem 0;
+}
+.topic-list p{
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.topic-list ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.topic-list ul li{
+	padding-bottom: .56rem;
+}
+.topic-list li:nth-child(1):before{
+	 font-family: "FontAwesome";
+	 content: "\f017";
+	 padding-right: .54rem;
+	 font-weight: normal;
+}
+   .topic-list li:nth-child(2):before{
+  	 font-family: "FontAwesome";
+  	 content: "\f016";
+  	 padding-right: .54rem;
+  	 font-size: .85rem;
+  }
+   .topic-list li:nth-child(3):before{
+  	 font-family: "FontAwesome";
+  	 content: "\f019";
+  	 padding-right: .54rem;
+  	
+  }
+
+ .topic-list li:nth-child(5):before {
+	 font-family: "FontAwesome";
+	 content: "\f10b";
+	 padding-right: .54rem;
+	 font-size: 1.3rem;
+}
+ .topic-list li:nth-child(4):before {
+	 font-family: "FontAwesome";
+	 content: "\f0c1";
+	 padding-right: .54rem;
+	
+}
+	@media(max-width: 767px){
+	.body-content{
+		display:block;
+		width: 100%;
+	}
+	.right-col{
+		width: 100%;
+	}
+	.left-col{
+		width: 100%;
+		margin-bottom: 1.9rem;
+	}
+	.right-col li {
+		text-align: left;
+	}
+	.course-detls{
+		margin: 0;
+	}
+	}
+	</style>
+</head>
+<body>
+<div class="course-container">
+	<div class="header">
+		<h1>Course Details</h1>
+	</div>
+
+	<div class="body-content">
+		<div class="left-col">
+			<h2>Course Details</h2>
+			<div class="course-detls">
+			<p>The has() method returns all elements that have one or more elements inside of them, that matches the specified selector.
+Tip: To select elements that have multiple elements inside of them, use comma (see example below).</p>
+</div>
+		</div>
+		<div class="right-col">
+			<img src="cart1.png" alt="cart" width="70" height="60">
+            <div class="price-container">
+            	<div class="price-text"><span class="pr-text">₹489</span></div>
+            	<div class="price-text"><span class="strike-text"><s>₹389</s></span></div>
+            	<div class="price-text"><span class="price-off-txt">59% off</span></div>
+            	            </div>
+
+            	            <div class="discount-text">
+            	            	<p><strong>1 day</strong> left at this price!</p>
+            	            	
+            	            </div>
+	
+         <button class="button button2">Buy Now</button>
+
+         <div class="topic-list">
+         	<p>This course includes:</p>
+         	<ul>
+         		<li class="clk-icn">21 hours on-demand video</li>
+         		<li>3 articles</li>
+         		<li>4 downloadable resources</li>
+         		<li>Full lifetime access</li>
+         		<li>Access on mobile and TV</li>
+         		
+         	</ul>
+         </div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

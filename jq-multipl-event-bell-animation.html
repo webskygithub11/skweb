@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Multiple event</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		.bell-noti{
+			margin-top: 20px;
+			padding: 50px;
+			text-align: center;
+			position: relative;
+			animation: bell 1s linear infinite alternate-reverse;
+			transform-origin: top;
+		}
+
+		@keyframes bell{
+			0%{
+				transform: rotate(-20deg);
+			}
+			100%{
+				transform: rotate(20deg);
+
+			}
+		}
+		.bell-noti .fa{
+			color: #333;
+			font-size: 50px;
+		}
+		.bell-noti:after{
+			content: attr(current-count);
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background: red;
+			border-radius: 50%;
+			top:50px;
+			right:645px;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="">
+    
+    <div class="bell-noti" current-count="6">
+    <i class="fa fa-bell" aria-hidden="true"></i>
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('input:text').on('keyup blur',
+				function(e){
+					var tt = e.type;
+					if (tt == 'keyup'){
+						$(this).css({"background-color": "yellow","color":"white", "font-size": "200%"});
+					}
+					else if (tt == 'blur'){
+						$(this).css({"background-color": "green","color":"white", "font-size": "200%"});
+					
+				}
+		// 	$('input:text').bind('keyup blur',
+  // function(e) {
+  //   var t = e.type;
+  //   if (t == 'blur') {
+  //     $(this).css('background-color', 'red');
+  //   } else if (t == 'keyup') {
+  //     $(this).css('background-color', 'green');
+  //   }
+  // });
+
+        });
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Hover</title>
+        <style>
+            .drobtn{
+                padding: 16px;
+                background: coral;
+                
+
+            }
+            .dropdown{
+                position: relative;
+                display:inline-block;
+              
+            }
+            .drop-content{
+                position: absolute;
+                display: none;
+                z-index: 1;
+                background-color:green;
+                min-width: 160px;
+                            
+                               
+            }
+            .drop-content a{
+                color: black;
+                 padding: 12px 16px;
+                 text-decoration: none;
+                 display: block;
+                
+            }
+            .dropdown:hover .drop-content{
+                display: block;
+                border-bottom: 2px solid #fff;
+                transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+            }
+            .drop-content a:hover{
+                background-color: antiquewhite;
+                
+            }
+        </style>
+    </head>
+</html>
+<body>
+    <div class="dropdown">
+        <div class="drobtn">Home</div>
+        <div class="drop-content">
+            <a href="#">Home-1</a>
+            <a href="#">Home-1</a>
+            <a href="#">Home-1</a>
+            <a href="#">Home-1</a>
+            <a href="#">Home-1</a>
+        </div>
+    </div>
+</body>

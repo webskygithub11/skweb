@@ -1,0 +1,62 @@
+@mixin text($para4,$para1,$para2,$para3){
+    font-size:$para4;
+    font-weight: 800;
+    text-decoration: underline;
+    letter-spacing: $para1;
+    text-transform:$para2;
+    font-style: $para3;
+
+    
+}
+.gg{
+  @include text(4rem, 1rem, uppercase, italic);
+    color: red;
+}
+$bg-color:green;
+
+.first,.second{
+    width: 300px;
+    height: 80px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+.first{
+    background: $bg-color;
+}
+.second{
+    // background-color: lighten($bg-color, 60);
+    // background-color: lighten($bg-color, 60);
+    // background: adjust-hue($bg-color,60);
+    // background: saturate($bg-color,20);
+    // background:desaturate($bg-color,90);
+    // background: mix($bg-color,yellow,20);
+    // background: saturate($bg-color,20);
+    background:transparentize($bg-color, 0.4);
+}
+    
+
+body{
+    background: grey;
+}
+
+@mixin media($width){
+    @media screen and (max-width : $width){
+        @content;
+    }
+}
+@include media(1300px){
+  body{
+    background: red;
+  }
+}
+@include media(1100px){
+    body{
+      background:green
+    }
+  }
+  @include media(700px){
+    body{
+      background:yellow
+    }
+  }
+

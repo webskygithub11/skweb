@@ -1,0 +1,41 @@
+<html>
+    <head>
+<title>Scroll Behavior</title>
+<style>
+html {
+  scroll-behavior: smooth;
+  transition: all .3s ease-in-out;
+}
+ul li{
+    display: inline;
+    padding: 0px;
+}
+
+#section1{
+    height: 700px;
+    background-color: aqua;
+}
+#section2{
+    height: 700px;
+    background-color:red;
+}
+#section3{
+    height: 700px;
+    background-color:yellow;
+}
+</style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#section1">section1</a></li>
+            <li><a href="#section2">section2</a></li>
+            <li><a href="#section2">section3</a></li>
+        </ul>
+      <div id="section1">The scroll-behavior property specifies whether to smoothly animate the scroll position, instead of a straight jump, when the user clicks on a link within a scrollable box.</div>
+      <div id="section2">In HTML, the tab character is usually displayed as a single space-character, except for some elements, like <textarea> and <pre>, and the result of the tab-size property will only be visible for those elements.</div>
+      <div id="section3">The numbers in the table specify the first browser version that fully supports the property.</div>
+
+        Numbers followed by -moz- or -o- specify the first version that worked with a prefix.</div>
+        <p><strong>Note:</strong> The scroll-behavior property is not supported in Internet Explorer.</p>
+    </body>
+</html>

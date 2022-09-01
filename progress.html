@@ -1,0 +1,67 @@
+<html>
+    <head>
+<style>
+    .animated-progress {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px 10px;
+  border: 1px solid rgb(189, 113, 113);
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-progress span {
+  height: 100%;
+  display: block;
+  width: 0;
+  color: rgb(255, 251, 251);
+  line-height: 30px;
+  position: absolute;
+  text-align: end;
+  padding-right: 5px;
+}
+
+.progress-blue span {
+  background-color: blue;
+}
+.progress-green span {
+  background-color: green;
+}
+.progress-purple span {
+  background-color: indigo;
+}
+.progress-red span {
+  background-color: red;
+}
+</style>
+    </head>
+    <body>
+        <!--Start Animated Progress Bar-->
+      <div class="animated-progress progress-blue">
+        <span data-progress="45"></span>
+      </div>
+      <div class="animated-progress progress-green">
+        <span data-progress="60"></span>
+      </div>
+      <div class="animated-progress progress-purple">
+        <span data-progress="70"></span>
+      </div>
+      <div class="animated-progress progress-red">
+        <span data-progress="85"></span>
+      </div>
+<!--End Animated Progress Bar-->
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(".animated-progress span").each(function () {
+  $(this).animate(
+    {
+      width: $(this).attr("data-progress") + "%",
+    },
+    1000
+  );
+  $(this).text($(this).attr("data-progress") + "%");
+});
+    </script>
+</html>

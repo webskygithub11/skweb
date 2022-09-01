@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.circles-wrap {
+    position: absolute;
+    bottom: -65%;
+    right: -50%;
+    z-index: -1;
+}
+.services span.circle.circle-1 {
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    opacity: .2;
+    z-index: 5;
+    display: inline-block;
+    z-index: 5;
+}
+span.circle {
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.services .single-service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.services .single-service {
+    text-align: left;
+    position: relative;
+    padding: 130px 40px 45px;
+    box-shadow: 0 5px 35px #0000000d;
+    border-radius: 0;
+    background: #fff;
+    z-index: 5;
+    overflow: hidden;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+    margin: 15px 0;
+
+}
+services span.circle.circle-1 {
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    opacity: .2;
+    z-index: 5;
+    display: inline-block;
+    z-index: 5;
+}
+.services span.circle.circle-2 {
+    height: 200px;
+    width: 200px;
+    background: #fff;
+    opacity: .2;
+    z-index: 4;
+}
+.services span.circle.circle-3 {
+    height: 300px;
+    width: 300px;
+    background: #fff;
+    opacity: .2;
+    z-index: 3;
+}
+.services span.circle.circle-4 {
+    height: 400px;
+    width: 400px;
+    background: #fff;
+    opacity: .2;
+    z-index: 2;
+}
+.services .circles {
+    height: 400px;
+    width: 400px;
+    background: 0 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.services {
+    background: #f9faff;
+    padding-bottom: 85px;
+}
+.services .single-service:hover {
+    background: #3e54ff;
+}
+    </style>
+  </head>
+  <body>
+    <section class="services section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="serial">
+                 <span><i class="lni lni-code"></i></span>
+                </div>
+                <h3><a href="service-single.html">Web Solution</a></h3>
+                <p>Need A Project Completed By An Expert? Let’s Go! Access A Human Resources Consultant To
+                Answer Questions</p>
+                <div class="circles-wrap">
+                <div class="circles">
+                <span class="circle circle-1"></span>
+                <span class="circle circle-2"></span>
+                <span class="circle circle-3"></span>
+                <span class="circle circle-4"></span>
+                </div>
+                </div>
+                </div>
+                </div>
+        </div>
+      </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

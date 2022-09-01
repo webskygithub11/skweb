@@ -1,0 +1,134 @@
+.fgrp {
+  padding: 0 20px;
+}
+
+/* mixin */
+.box {
+  border: 1px solid #333;
+  text-align: center;
+  border-radius: 0.6rem;
+  min-height: 350px;
+  transition: all 0.4s ease;
+  margin-top: 50px;
+}
+.box .circle-box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin: 16px auto;
+}
+.box .circle-box h3 {
+  font-size: 16px;
+  line-height: 100px;
+}
+.box h2 {
+  font-size: 20px;
+}
+.box p {
+  color: grey;
+}
+.box span a {
+  color: blueviolet;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 1px solid blueviolet;
+  border-radius: 20px;
+  padding: 0.2rem 0.8rem;
+}
+.box .butn-grp {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0;
+}
+.box .btn-1 {
+  margin-right: 10px;
+}
+.box:hover {
+  border: 3px solid red;
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.feature {
+  background: cadetblue;
+  margin: 100px 0 44px;
+  padding: 30px 0;
+}
+.feature .feature-grp {
+  display: flex;
+  margin-bottom: 25px;
+}
+.feature .feature-grp .feature-icn {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  line-height: 80px;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.feature .feature-grp .feature-des {
+  margin-left: 15px;
+}
+.feature .feature-grp .feature-des h3 {
+  color: #fff;
+}
+
+.class-container {
+  margin: 20px 0 30px;
+}
+
+.icon-bx, .success .ms, .alerrt .ms, .info .ms {
+  width: 100px;
+  height: 100px;
+  color: #333;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.theme-title, .success .ms, .alerrt .ms, .info .ms {
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.info {
+  background: DarkGray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+  padding: 1rem 0.65rem;
+  text-align: center;
+}
+.info .ms {
+  background: #fff;
+}
+
+.alerrt {
+  background: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+  color: #fff;
+  padding: 1rem 0.65rem;
+  text-align: center;
+}
+.alerrt .ms {
+  background: #fff;
+}
+
+.success {
+  background: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+  color: #fff;
+  padding: 1rem 0.65rem;
+  text-align: center;
+}
+.success .ms {
+  background: #fff;
+}/*# sourceMappingURL=style1.css.map */

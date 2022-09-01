@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Arrow Function</title>
+    </head>
+</html>
+<body>
+    <script>
+        let sum = (a,b) => a+b;
+        let multiply = (c,d) => c*d;
+        document.write(sum(4,5));
+        document.write("<br>");
+        document.write(multiply(10,20));
+            </script>
+
+            <script>
+                let age = prompt("What is your age?", 18);
+                    let welcome = (age < 18) ?
+                    () => alert('Hello!') :
+                    () => alert("Greetings!");
+                    welcome();
+            </script>
+</body>
